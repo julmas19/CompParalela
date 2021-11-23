@@ -10,7 +10,18 @@ Realizar la compilacion del setup con:
 ```
 python3 setup.py build_ext --inplace
 ```
+si trabaja en MAC y el setup presenta fallos cambie el contenido del setup.py por:
+```
+
+```
 Luego de la compilacion exitosa ejecutar el lanzador
+```
+./lanzador.pl
+```
+Si trabaja en MAC
+```
+perl ./lanzador.pl
+```
 
 
 
