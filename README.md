@@ -21,7 +21,11 @@ setup(
       ext_modules=cythonize([Extension("heat_cyt", ["heat_cyt.pyx"], include_dirs=[numpy.get_include()])])
 )
 ```
-Luego de la compilacion exitosa ejecutar el lanzador
+Luego de la compilacion exitosa cambie la ruta de la variable $path a la ubicacion de su proyecto
+```perl
+$path = "Your path";#Ingresar su ruta - puede obetenerla ingresando el comando 'pwd' en la terminal
+```
+Ejecute el lanzador
 ```
 ./lanzador.pl
 ```
