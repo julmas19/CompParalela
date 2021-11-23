@@ -11,7 +11,7 @@ Realizar la compilacion del setup con:
 python3 setup.py build_ext --inplace
 ```
 si trabaja en MAC y el setup presenta fallos cambie el contenido del setup.py por:
-```
+```python
 from distutils.core import setup
 from distutils.extension import Extension
 from Cython.Build import cythonize
