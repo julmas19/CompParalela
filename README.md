@@ -26,7 +26,7 @@ Luego de la compilacion exitosa ejecutar el lanzador
 ./lanzador.pl
 ```
 Si trabaja en MAC
-```Unix
+```
 perl lanzador.pl
 ```
 
