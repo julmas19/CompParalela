@@ -12,7 +12,14 @@ python3 setup.py build_ext --inplace
 ```
 si trabaja en MAC y el setup presenta fallos cambie el contenido del setup.py por:
 ```
+from distutils.core import setup
+from distutils.extension import Extension
+from Cython.Build import cythonize
+import numpy
 
+setup(
+      ext_modules=cythonize([Extension("heat_cyt", ["heat_cyt.pyx"], include_dirs=[numpy.get_include()])])
+)
 ```
 Luego de la compilacion exitosa ejecutar el lanzador
 ```
