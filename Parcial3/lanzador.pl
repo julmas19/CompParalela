@@ -8,7 +8,7 @@ $repeticiones = 10;
 @ejecutables = ("heat_main");
 @data = ("bottle.dat","bottle_medium.dat","bottle_large.dat");
 @steps = ("100","200","300","500");
-$path = "/mnt/c/Paralela/Parcial3/";
+$path = "Your path";#Ingresar su ruta - puede obetenerla ingresando el comando 'pwd' en la terminal
 @version =("py","cyt");
 
 foreach $exe (@ejecutables) {
